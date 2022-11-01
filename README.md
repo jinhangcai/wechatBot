@@ -1,20 +1,9 @@
-## 微信每日说
 
 [![node version](https://img.shields.io/badge/node-%3E%3D16-blue.svg)](http://nodejs.cn/download/)
 [![node version](https://img.shields.io/badge/wechaty-%3E%3D1.20.2-blue.svg)](https://github.com/Chatie/wechaty)
 ![](https://img.shields.io/badge/Window-green.svg)
 ![](https://img.shields.io/badge/Mac-yellow.svg)
 ![](https://img.shields.io/badge/Centos-blue.svg)
-
-wechatBot 是基于 node 与 [wechaty](https://github.com/Chatie/wechaty) 的微信小情话工具。最初功能只有每日发送天气和一句情话，后来添加了智能机器人聊天功能。但由于本项目面向小白用户与刚接触 node 开发的用户，故拆分了两个项目，一个是功能专一面向小白的 [《微信每日说》](https://github.com/gengchen528/wechatBot) （也就是本项目） ，另一个也在我的仓库下 [《智能微秘书》](https://github.com/gengchen528/wechat-assistant-pro) 面向有较多编程经验的用户。下面主要介绍微信每日说的使用
-
-## 最新通知 喜大普奔
-
-由于wechaty的升级，现已支持所有微信登录，就算你的微信之前不能登录web版，现在也可以用了，赶快来体验吧。
-
-### ~~遗憾的通知~~
-
-uos 又可以重新使用了~~由于UOS桌面版协议微信已经关闭了，没法再继续用桌面版协议登录了，现在只能换回web协议了。可以登录网页版微信的账号可以继续用，不能登录网页版协议的就不能用了。或者你可以申请Wechaty 的ipad local协议的token可以免费试用7天 。申请地址:  https://github.com/padlocal/wechaty-puppet-padlocal~~
 
 ### 主要功能
 
@@ -262,106 +251,3 @@ npm install
 * yum安装完后，原来的gcc不覆盖，所以需要执行enable脚本更新环境变量，`sudo source /opt/rh/devtoolset-8/enable`
 
 * 可以通过加入到profile里面开机自动`source, vim /etc/profile`, 跳到最后一行加入以下内容，`source /opt/rh/devtoolset-8/enable`
-
-参考文章 [better-sqlite3](https://www.cnblogs.com/clwsec/p/12493653.html)
-
-有其他问题也可添加小助手微信后，发送`'加群'`进入微信每日说技术交流群
-
-## 注意
-
-本项目属于个人兴趣开发，开源出来是为了技术交流，请勿使用此项目做违反微信规定或者其他违法事情。
-建议使用小号进行测试，有被微信封禁网页端登录权限的风险（客户端不受影响），请确保自愿使用。因为个人使用不当导致网页端登录权限被封禁，均与作者无关，谢谢理解
-
-## 最后
-
-加好友后发送`加群`，会自动拉你进入群聊，同时此微信号有更多高级功能等待你的发现。
-
-![](https://user-gold-cdn.xitu.io/2019/2/28/1693401c6c3e6b02?w=430&h=430&f=png&s=53609)
-
-赶快亲自试一试吧，相信你会挖掘出更多好玩的功能
-
-关注公众号：随时获取最新消息
-
-![](https://user-gold-cdn.xitu.io/2019/3/1/169381d277ba6401?w=258&h=258&f=png&s=42373)
-
-## 鸣谢
-
-感谢[天行数据](https://www.tianapi.com/)提供，天气，土味情话，智能机器人 api 等接口
-
-## 捐助
-
-如果您认为这个项目对你有所帮助，是否可以为它捐助一点资金呢？
-
-不管钱多钱少，您的捐助将会激励我持续开发新的功能！🎉
-
-感谢您的支持！
-
-捐助方法如下：
-
-<div style="display: flex;justify-content: flex-start">
-<img width="300" height="350" src="http://image.xkboke.com/web-inn/aibotk-weixin.png" />
-<img width="300" height="350" src="http://image.xkboke.com/web-inn/aibotk-alipay.png" />
-</div>
-
-## 更新日志
-
-2022-07-15
-
-- 升级Wechaty 到1.x，支持UOS协议
-
-2021-05-20
-
-- 添加docker支持，摆脱环境困扰
-
-2021-04-13
-
-- 重大更新，被限制web登录的微信也可以使用了
-
-2021-02-08
-
-- 更新 wechaty 版本
-  2020-12-07
-- 更新 wechaty 版本
-
-2020-04-02
-
-- 添加 docker 部署支持
-- 更新 wechaty 版本
-
-2019-07-05
-
-- 添加垃圾分类功能，默认开启，使用方法： ？垃圾名称
-
-2019-07-04
-
-- 添加天行数据的图灵机器人接口支持（）
-
-2019-07-02
-
-- 添加机器人多人回复配置项
-- 添加图灵机器人与天行机器人可选配置项
-
-2019-06-27
-
-- 更新天气接口使用天行 api
-- 每日说添加每日情话
-- 依赖中直接加入`wechaty-puppet-puppeteer`安装
-- `.npmrc`中设置项目 npm 源为淘宝源
-- 添加错误解决方案
-
-2019-06-16
-
-- 更新 wechaty 版本，更改图灵机器人为天行机器人，简化操作配置，修改说明文档，更适合小白用户
-
-2019-03-06
-
-- 添加图灵机器人配置项，需要先去注册图灵机器人，[网址](http://www.tuling123.com)
-
-2019-03-04
-
-- 进群后播报欢迎词
-
-2019-03-02：
-
-- 添加自动加好友，自动拉群可配置项
-- 重启后可维持登录状态
